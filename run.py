@@ -87,9 +87,23 @@ def get_last_5_entries_livessaved():
     for ind in range(1,9):
         column = livessaved.col_values(ind)
         columns.append(column[-5:])
-        
+
     return columns
+
+def calculate_vaccineproduce_data(data):
+    """ 
+    Calculate the average vaccine produce number for each type of vaccine, adding 20%
+    """
+    print("Calculate vaccinceproduce data...\n")
+    new_vaccineproduce_data = []
+
+    for column in data:
+        int_column = [int(num) for num in column]
+        average = sum(int_column) / len(int_column)
+        vaccineproduce_num = average * 2.2
+        new_vaccineproduce_data.append(round(vaccineproduce_num))
     
+    return new_vaccineproduce_data
 
 
 def main():
@@ -101,12 +115,15 @@ def main():
     update_worksheet(livessaved_data, "livessaved")
     new_surplus_data = calculate_surplus_data(livessaved_data)
     update_worksheet(new_surplus_data, "surplus")
+    livessaved_columns = get_last_5_entries_livessaved()
+    vaccineproduce_data = calculate_vaccineproduce_data(livessaved_columns)
+    update_worksheet(vaccineproduce_data, "vaccineproduce")
     
 
 print("Welcome to Vaccines Africa Data Automation")
-#main()
+main()
 
-livessaved_columns = get_last_5_entries_livessaved()
+
 
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
