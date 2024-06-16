@@ -75,6 +75,20 @@ def calculate_surplus_data(livessaved_row):
         surplus_data.append(surplus)
 
     return surplus_data
+
+def get_last_5_entries_livessaved():
+    """ 
+    Collects collumns of data from lives saved worksheet, collecting the last 5 entries for each vaccine
+    and returns the data as a list of lists.
+    """
+    livessaved = SHEET.worksheet("livessaved")
+    
+    columns = []
+    for ind in range(1,9):
+        column = livessaved.col_values(ind)
+        columns.append(column[-5:])
+        
+    return columns
     
 
 
@@ -90,7 +104,9 @@ def main():
     
 
 print("Welcome to Vaccines Africa Data Automation")
-main()
+#main()
+
+livessaved_columns = get_last_5_entries_livessaved()
 
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
