@@ -106,6 +106,23 @@ def calculate_vaccineproduce_data(data):
     return new_vaccineproduce_data
 
 
+def calculate_totallivessaved_data(data):
+    """ 
+    Calculate the lump sum number for each vaccine tape from the last 5 years
+    """
+    print("Calculating totallivessaved data...\n")
+    new_totallivessaved_data = []
+
+    for column in data:
+        int_column = [int(num) for num in column]
+        total = sum(int_column)
+        totallivessaved_num = total
+        new_totallivessaved_data.append(totallivessaved_num)
+    return new_totallivessaved_data
+
+   
+
+
 def main():
     """ 
     Run all program functions
@@ -118,10 +135,16 @@ def main():
     livessaved_columns = get_last_5_entries_livessaved()
     vaccineproduce_data = calculate_vaccineproduce_data(livessaved_columns)
     update_worksheet(vaccineproduce_data, "vaccineproduce")
+    totallivessaved_data = calculate_totallivessaved_data(livessaved_columns)
+    update_worksheet(totallivessaved_data, "totallivessaved")
+
+
+    #update_worksheet(totallivessaved_data, "totallivessaved")
     
 
 print("Welcome to Vaccines Africa Data Automation")
 main()
+#livessaved_columns = get_last_5_entries_livessaved()
 
 
 
