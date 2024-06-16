@@ -57,6 +57,15 @@ def update_livessaved_worksheet(data):
     livessaved_worksheet.append_row(data)
     print("livessaved worksheet updated successfully.\n")
 
+def update_surplus_worksheet(data):
+    """ 
+    Update surplus worksheet, and new row with the list data provided.
+    """
+    print("Updating surplus worksheet...\n")
+    surplus_worksheet = SHEET.worksheet("surplus")
+    surplus_worksheet.append_row(data)
+    print("Surplus worksheet updated successfully.\n")
+
 def calculate_surplus_data(livessaved_row):
     """ 
     Compare lives saved number with vaccine produce number and calculate the surplus for each vaccine type.
@@ -71,7 +80,7 @@ def calculate_surplus_data(livessaved_row):
     for vaccineproduce, livessaved in zip(vaccineproduce_row, livessaved_row):
         surplus = int(vaccineproduce) - livessaved
         surplus_data.append(surplus)
-        
+
     return surplus_data
     
 
@@ -84,7 +93,7 @@ def main():
     livessaved_data = [int(num) for num in data]
     update_livessaved_worksheet(livessaved_data)
     new_surplus_data = calculate_surplus_data(livessaved_data)
-    print(new_surplus_data)
+    update_surplus_worksheet(new_surplus_data)
     
 
 print("Welcome to Vaccines Africa Data Automation")
