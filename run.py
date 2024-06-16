@@ -47,9 +47,20 @@ def validate_data(values):
     
     return True
 
-        
+def update_livessaved_worksheet(data):
+    """ 
+    Update livessaved worksheet, and new row with the list data provided.
+    """
+    print("Updating livessaved worksheet...\n")
+    livessaved_worksheet = SHEET.worksheet("livessaved")
+    livessaved_worksheet.append_row(data)
+    print("livessaved worksheet updated successfully.\n")
+
+
 
 data = get_livessaved_data()
+livessaved_data = [int(num) for num in data]
+update_livessaved_worksheet(livessaved_data)
 
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
