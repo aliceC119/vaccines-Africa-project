@@ -13,14 +13,32 @@ SHEET = GSPREAD_CLIENT.open('Vaccines - Africa (2020-2024)')
 
 def get_livessaved_data():
     """ 
-    Get livessaved figures input from the user
+    Get livessaved figures input from the user.
     """
     print("Please enter livessaved data from last year.")
     print("Data should be eight numbers, separated ba commas")
     print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
-    data_str = input("Enter your data here: ")
-    print(f"The data provided is {data_str}")
+    data_str = input("Enter your data here: ") 
+    livessaved_data = data_str.split(",")
+    validate_data(livessaved_data)
+    
+
+def validate_data(values):
+    """ 
+    Inside the try, converts all string values into integers.
+    Raises ValueError if strings cannot be converted into int,
+    or if there aren't exactly 8 values.
+    """
+    try:
+        if len(values) != 8:
+            raise ValueError(
+                f"Exactly 8 values required, you provided {len(values)}"
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again.\n")
+
+        
 
 get_livessaved_data()
 
