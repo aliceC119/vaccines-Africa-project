@@ -15,13 +15,18 @@ def get_livessaved_data():
     """ 
     Get livessaved figures input from the user.
     """
-    print("Please enter livessaved data from last year.")
-    print("Data should be eight numbers, separated ba commas")
-    print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
+    while True:
+        print("Please enter livessaved data from last year.")
+        print("Data should be eight numbers, separated ba commas")
+        print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
-    data_str = input("Enter your data here: ") 
-    livessaved_data = data_str.split(",")
-    validate_data(livessaved_data)
+        data_str = input("Enter your data here: ") 
+        livessaved_data = data_str.split(",")
+
+        if validate_data(livessaved_data):
+            print("Data is valid!")
+            break
+    return livessaved_data
     
 
 def validate_data(values):
@@ -38,10 +43,13 @@ def validate_data(values):
             )
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
+        return False
+    
+    return True
 
         
 
-get_livessaved_data()
+data = get_livessaved_data()
 
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
