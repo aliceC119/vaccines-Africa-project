@@ -18,7 +18,7 @@ def get_livessaved_data():
     """
     while True:
         print("Please enter lives saved data from last year.")
-        print("Data should be eight numbers, separated ba commas")
+        print("Data should be eight numbers, separated by commas")
         print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
         data_str = input("Enter your data here:\n")
