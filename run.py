@@ -21,7 +21,7 @@ def get_livessaved_data():
         print("Data should be eight numbers, separated ba commas")
         print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:\n")
         livessaved_data = data_str.split(",")
 
         if validate_data(livessaved_data):
