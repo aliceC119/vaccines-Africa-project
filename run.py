@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -17,7 +16,7 @@ def get_livessaved_data():
     Get livessaved figures input from the user.
     """
     while True:
-        print("Please enter livessaved data from last year.")
+        print("Please enter lives saved data from last year.")
         print("Data should be eight numbers, separated ba commas")
         print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
@@ -28,7 +27,6 @@ def get_livessaved_data():
             print("Data is valid!")
             break
     return livessaved_data
-    
 
 def validate_data(values):
     """ 
@@ -47,7 +45,6 @@ def validate_data(values):
         return False
     
     return True
-
 
 def update_worksheet(data, worksheet):
     """
@@ -94,7 +91,7 @@ def calculate_vaccineproduce_data(data):
     """ 
     Calculate the average vaccine produce number for each type of vaccine, adding 20%
     """
-    print("Calculate vaccinceproduce data...\n")
+    print("Calculating vaccinceproduce data...\n")
     new_vaccineproduce_data = []
 
     for column in data:
@@ -105,12 +102,11 @@ def calculate_vaccineproduce_data(data):
     
     return new_vaccineproduce_data
 
-
 def calculate_totallivessaved_data(data):
     """ 
     Calculate the lump sum number for each vaccine tape from the last 5 years
     """
-    print("Calculating totallivessaved data...\n")
+    print("Calculating total lives saved data...\n")
     new_totallivessaved_data = []
 
     for column in data:
@@ -119,9 +115,6 @@ def calculate_totallivessaved_data(data):
         totallivessaved_num = total
         new_totallivessaved_data.append(totallivessaved_num)
     return new_totallivessaved_data
-
-   
-
 
 def main():
     """ 
@@ -138,13 +131,9 @@ def main():
     totallivessaved_data = calculate_totallivessaved_data(livessaved_columns)
     update_worksheet(totallivessaved_data, "totallivessaved")
 
-
-    #update_worksheet(totallivessaved_data, "totallivessaved")
-    
-
 print("Welcome to Vaccines Africa Data Automation")
 main()
-#livessaved_columns = get_last_5_entries_livessaved()
+
 
 
 
