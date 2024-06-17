@@ -3,7 +3,7 @@
 - Vaccines-Africa wants the Python programme to show how many lives are saved by each vaccine (diphtheria ,hepatitis B, measles , polio, rubella, tetanus, tuberculosis, yellow fever) on average in Africa from 2020, and help to calculate the vaccine production amount for next year.
 - The programme can also calculate the annual surplus of unused vaccines.
 - The total number of lives saved by each vaccine is calculated to give an insight into the number of lives saved by each type of vaccine. The programme can calculate the total number of lives saved for the last 5 years. Data in worksheet starts in the year of 2020.
-<img width="1092" alt="Screenshot 2024-06-17 at 11 11 37" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/70e38a5f-c2ce-4fd6-9517-3263178e4ac3">
+<img width="866" alt="Screenshot 2024-06-17 at 15 11 36" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/eba3b0dd-6040-425a-acd1-29f05948068f">
 
 
 
@@ -37,16 +37,20 @@
   'Calculating surplus data...', 'Updating surplus worksheet...', 'surplus worksheet updated successfully',
   'Caluculating vaccineproduce data', 'Updating vaccineproduce worksheet...', 'vaccineproduce worksheet updated successfully',
   'Calculating total lives saved data..', 'Updating totallivessaved worksheet...', 'totallivessaved worksheet updated successfully'
-<img width="731" alt="Screenshot 2024-06-17 at 11 47 06" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/793cbaf2-9a27-4d11-918f-31827fb4d93b">
 
-<img width="731" alt="Screenshot 2024-06-17 at 12 19 26" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/fbdb8b10-4524-441d-a547-5c6a39cdeddc">
+<img width="726" alt="Screenshot 2024-06-17 at 15 13 01" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/bd39f802-211a-4d11-a4a9-2f67fe1dd645">
+
+<img width="730" alt="Screenshot 2024-06-17 at 15 14 16" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/3a1b4da1-107b-4882-8a8e-088ec0f3c96d">
 
 ## Testing 
 
  I have manually test this project by doing the following:
 - Given invalid inputs: Error messages were displayed with differerent issues accordingly, e.g. too less or too many numbers; non-numerical data.
 - Tested in my local terminal and the Code Institue Heroku terminal.
-<img width="633" alt="Screenshot 2024-06-17 at 12 57 02" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/766f0f5a-8948-49c9-86a3-3b9a9372a642">
+
+
+<img width="974" alt="Screenshot 2024-06-17 at 15 21 51" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/5299dad9-70c8-4760-b749-b59b07743713">
+
 
 
 ## Validtor Testing
