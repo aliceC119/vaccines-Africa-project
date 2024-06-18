@@ -81,6 +81,7 @@ def calculate_surplus_data(livessaved_row):
     for vaccineproduce, livessaved in zip(vaccineproduce_row, livessaved_row):
         surplus = int(vaccineproduce) - livessaved
         surplus_data.append(surplus)
+    print(surplus_data)
 
     return surplus_data
 
