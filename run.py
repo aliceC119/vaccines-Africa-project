@@ -154,7 +154,18 @@ def main():
     update_worksheet(vaccineproduce_data, "vaccineproduce")
     totallivessaved_data = calculate_totallivessaved_data(livessaved_columns)
     update_worksheet(totallivessaved_data, "totallivessaved")
+    return vaccineproduce_data
 
 
 print("Welcome to Vaccines Africa Data Automation")
-main()
+vaccineproduce_data = main()
+
+def get_vaccineproduce_values(data):
+    headings = SHEET.worksheet("vaccineproduce").get_all_values()[0]
+    
+    print("Produce the following numbers of vaccines for next year: \n")
+    
+    return {heading: data for heading, data in zip(headings, data)}
+
+vaccineproduce_values = get_vaccineproduce_values(vaccineproduce_data)
+print(vaccineproduce_values)
