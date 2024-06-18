@@ -107,7 +107,7 @@ def calculate_vaccineproduce_data(data):
     Calculate the average vaccine produce number for each type of vaccine,
     then adding 20%.
     """
-    print("Calculating vaccinceproduce data...\n")
+    print("Calculating new vaccince production data...\n")
     new_vaccineproduce_data = []
 
     for column in data:
