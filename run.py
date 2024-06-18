@@ -17,7 +17,10 @@ def get_livessaved_data():
     Get livessaved figures input from the user.
     """
     while True:
-        print("Please enter lives saved numbers by vaccines in the last year.")
+        print("Please enter the numbers of lives saved by the following \n\
+        vaccines in the last year in this order: \n\
+        Diphtheria, Hepatitis B, Measles, Polio, Rubella,Tetanus, \n\
+        Tuberculosis, Yellow fever.")
         print("Data should be eight numbers, separated by commas")
         print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
@@ -107,7 +110,7 @@ def calculate_vaccineproduce_data(data):
     Calculate the average vaccine produce number for each type of vaccine,
     then adding 20%.
     """
-    print("Calculating new vaccince production data...\n")
+    print("Calculating new vaccince production data for next year...\n")
     new_vaccineproduce_data = []
 
     for column in data:
@@ -124,7 +127,7 @@ def calculate_totallivessaved_data(data):
     """
     Calculate the lump sum number for each vaccine tape from the last 5 years
     """
-    print("Calculating total lives saved data...\n")
+    print("Calculating total lives saved data from the last 5 years...\n")
     new_totallivessaved_data = []
 
     for column in data:
