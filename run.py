@@ -26,8 +26,11 @@ def get_livessaved_data():
 
         if validate_data(livessaved_data):
             print("Data is valid!")
+            print(f"The data provided is {data_str}")
             break
+        
     return livessaved_data
+        
 
 
 def validate_data(values):
