@@ -56,9 +56,10 @@ def validate_data(values):
 
 def update_worksheet(data, worksheet):
     """
-    Receives a list of integers to be inserted into a worksheet
+    - Receives a list of integers to be inserted into a worksheet
     Update the relevant worksheet with the data provided.
-    The data refer to the numbers of lives saved, and the
+
+    -The data refer to the numbers of lives saved, and the
     calculated numbers of surplus, vaccine production, and the
     total lives saved.
     """
