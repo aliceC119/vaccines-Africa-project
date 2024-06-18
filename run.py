@@ -17,7 +17,7 @@ def get_livessaved_data():
     Get livessaved figures input from the user.
     """
     while True:
-        print("Please enter the number of lives saved in the last year by the following vaccines in this order: Diptheria, Hepatitis B, Measles, Polio, Rebella, Tentanus, Tiberculosis, and Yellow Fever.")
+        print("Please enter the numbers of lives saved in the last year by the following vaccines in this order: Diptheria, Hepatitis B, Measles, Polio, Rebella, Tentanus, Tiberculosis, and Yellow Fever.")
         print("Data should be eight numbers, separated by commas")
         print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
