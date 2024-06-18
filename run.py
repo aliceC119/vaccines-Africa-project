@@ -132,6 +132,7 @@ def calculate_totallivessaved_data(data):
         total = sum(int_column)
         totallivessaved_num = total
         new_totallivessaved_data.append(totallivessaved_num)
+    print(new_totallivessaved_data)
     return new_totallivessaved_data
 
 
