@@ -115,6 +115,7 @@ def calculate_vaccineproduce_data(data):
         average = sum(int_column) / len(int_column)
         vaccineproduce_num = average * 2.2
         new_vaccineproduce_data.append(round(vaccineproduce_num))
+    print(new_vaccineproduce_data)
 
     return new_vaccineproduce_data
 
