@@ -1,8 +1,8 @@
-## Purpose of this project
+## Introduction
 
-- Vaccines-Africa wants the Python programme to show how many lives are saved by each vaccine (diphtheria ,hepatitis B, measles , polio, rubella, tetanus, tuberculosis, yellow fever) on average in Africa from 2020, and help to calculate the vaccine production amount for next year.
-- The programme can also calculate the annual surplus of unused vaccines.
-- The total number of lives saved by each vaccine is calculated to give an insight into the number of lives saved by each type of vaccine. The programme can calculate the total number of lives saved for the last 5 years. Data in worksheet starts in the year of 2020.
+- Vaccines-Africa project would like the Python program to show how many lives are saved by each vaccine (diphtheria , hepatitis B, measles, polio, rubella, tetanus, tuberculosis, yellow fever) on average in Africa from 2020, it can also calculate the annual surplus of unused vaccines. The calculations aim to estimate the vaccine production amount for next year.
+- The total number of lives saved by each vaccine is calculated to give an insight into the number of lives saved by each type of vaccine. The program can calculate the total number of lives saved for the last 5 years. Data in the worksheet starts in the year of 2020.
+
 <img width="866" alt="Screenshot 2024-06-17 at 15 11 36" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/eba3b0dd-6040-425a-acd1-29f05948068f">
 
 
@@ -11,14 +11,14 @@
 
 1. Collect lives saved data from user
 2. Check that the lives saved data entered by the user is valid, if not, messages will be displayed according to different issues to request the user to provide the correct format of the data.
-3. Add lives saved data into lives saved worksheet
+3. Add lives saved data into the lives saved worksheet
 4. Calculate surplus numbers (the number of each vaccine type produced minus the number of lives saved from last year.)
-5. Add surplus data to surplus worksheet
+5. Add surplus data to the surplus worksheet
 6. Calculate averages of the vaccine production numbers for the last 5 years
-7. User would like to save more lives by increase the vaccines numbers, so a calculation of vaccine production numbers is added (using the averages of vaccine prodction numbers and add 20% for next year)
-8. Print vaccine production amount for recommendations and add data into 'vaccineproduce' worksheet
+7. The vaccine company would like to save more lives by increasing the vaccine numbers, so a calculation of vaccine production numbers is added (using the averages of vaccine production numbers and adding 20% for next year)
+8. Print vaccine production amount for recommendations and add data into the 'vaccineproduce' worksheet
 9. Calculate the total number of lives saved for each vaccine from the past 5 years ( sum up the numbers of lives saved for each vaccine type)
-10. Update data of the total lives saved numbers for each vaccine into 'totallivessaved' worksheet
+10. Update data of the total lives saved numbers for each vaccine into the ’totallivessaved' worksheet
 
 
 ![vaccine_Africe_workflow](https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/0af6bc4d-6469-44a4-a52e-f0b80c4003f3)
