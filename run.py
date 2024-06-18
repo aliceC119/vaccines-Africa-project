@@ -17,7 +17,9 @@ def get_livessaved_data():
     Get livessaved figures input from the user.
     """
     while True:
-        print("Please enter the numbers of lives saved in the last year by the following vaccines in this order: Diptheria, Hepatitis B, Measles, Polio, Rebella, Tentanus, Tiberculosis, and Yellow Fever.")
+        print("Please enter the numbers of lives saved in the last year by following vaccines in this order: Diptheria, Hepatitis B, Measles, Polio, Rebella, Tentanus, Tiberculosis, and Yellow Fever.")
+        
+        
         print("Data should be eight numbers, separated by commas")
         print("Example: 1000,2000,3000,4000,5000,6000,7000,8000\n")
 
@@ -56,8 +58,8 @@ def update_worksheet(data, worksheet):
     """
     Receives a list of integers to be inserted into a worksheet
     Update the relevant worksheet with the data provided.
-    The data refer to the numbers of lives saved, and the calculated numbers of surplus, vaccine production, 
-    and the total lives saved.
+    The data refer to the numbers of lives saved, and the 
+    calculated numbers of surplus, vaccine production, and the total lives saved.
     """
     print(f"Updating {worksheet} worksheet...\n")
     worksheet_to_update = SHEET.worksheet(worksheet)
