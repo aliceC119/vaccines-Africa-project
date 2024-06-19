@@ -14,17 +14,17 @@
 1. Collect lives saved data from user
 2. Check that the lives saved data entered by the user is valid, if not, messages will be displayed according to different issues to request the user to provide the correct format of the data.
 3. Valid lives saved data will be displayed in the terminal after entered by the user.
-4. Add lives saved data into the lives saved worksheet
+4. Add lives saved data to the 'livessaved' worksheet
 5. Calculate surplus numbers (the number of each vaccine type produced minus the number of lives saved from last year.)
 6. Calculated surplus data will be displayed in the terminal.
-7. Add surplus data to the surplus worksheet
+7. Add surplus data to the 'surplus' worksheet
 8. Calculate averages of the vaccine production numbers for the last 5 years
 9. The vaccine company would like to save more lives by increasing the vaccine numbers, so a calculation of vaccine production numbers is added (using the averages of vaccine production numbers and adding 20% for next year)
 10. Calculated numbers of the vaccine production for next year will be displayed in the terminal.
 11. Add data of the vaccine production to the 'vaccineproduce' worksheet.
 12. Calculate the total number of lives saved for each vaccine from the past 5 years ( sum up the numbers of lives saved for each vaccine type)
 13. Calculated numbers of the total lives saved will be displayed in the terminal.
-14. Add data of the total lives saved numbers for each vaccine to the ’totallivessaved' worksheet
+14. Add the total number of lives saved for each vaccine to the 'totallivessaved' worksheet.
 15. Request detailed production data showing the amount of each type of vaccine estimated to be produced for the next year.
 
 
@@ -93,7 +93,7 @@
 
 ## Validtor Testing
 + PEP8
-  - No errors were retirned from https://pep8ci.herokuapp.com/
+  - No errors were returned from https://pep8ci.herokuapp.com/
 
 ## Deployment
 This project was deployed using Code Institute's mock terminal for Heroku.
