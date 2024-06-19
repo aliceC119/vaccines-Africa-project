@@ -167,7 +167,7 @@ def get_vaccineproduce_values(data):
     print("Produce the following numbers of vaccines for next year: \n")
 
     return {heading: data for heading, data in zip(headings, data)}
-    
+
 
 vaccineproduce_values = get_vaccineproduce_values(vaccineproduce_data)
 print(vaccineproduce_values)
