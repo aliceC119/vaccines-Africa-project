@@ -123,6 +123,10 @@ def calculate_vaccineproduce_data(data):
         average = sum(int_column) / len(int_column)
         vaccineproduce_num = average * 2.2
         new_vaccineproduce_data.append(round(vaccineproduce_num))
+    print(f"The calculated vaccine production numbers of the following \n\
+    vaccines are in this order: \n\
+    Diphtheria, Hepatitis B, Measles, Polio, Rubella,Tetanus,\n\
+    Tuberculosis, Yellow fever")
     print(new_vaccineproduce_data)
 
     return new_vaccineproduce_data
@@ -141,9 +145,9 @@ def calculate_totallivessaved_data(data):
         totallivessaved_num = total
         new_totallivessaved_data.append(totallivessaved_num)
     
-    print(f"The calculated total number of lives saved by the \n\
-    following vaccines is in this order: Diphtheria, Hepatitis B, \n\
-        Measles, Polio, Rubella,Tetanus, Tuberculosis, Yellow fever")
+    print(f"The calculated total numbers of lives saved by the \n\
+    following vaccines are in this order: Diphtheria, Hepatitis B, \n\
+    Measles, Polio, Rubella,Tetanus, Tuberculosis, Yellow fever")
     print(new_totallivessaved_data)
     return new_totallivessaved_data
 
