@@ -63,10 +63,9 @@ def update_worksheet(data, worksheet):
     calculated numbers of surplus, vaccine production, and the
     total lives saved.
     """
-    
+
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
-    
 
 
 def calculate_surplus_data(livessaved_row):
@@ -144,7 +143,7 @@ def calculate_totallivessaved_data(data):
         total = sum(int_column)
         totallivessaved_num = total
         new_totallivessaved_data.append(totallivessaved_num)
-    
+
     print(f"The calculated total number of lives saved by the \n\
     following vaccines are listed in this order: Diphtheria, Hepatitis B, \n\
     Measles, Polio, Rubella,Tetanus, Tuberculosis, Yellow fever")
@@ -167,7 +166,6 @@ def main():
     totallivessaved_data = calculate_totallivessaved_data(livessaved_columns)
     update_worksheet(totallivessaved_data, "totallivessaved")
     return vaccineproduce_data
-    
 
 
 print("Welcome to Vaccines Africa Data Automation")
@@ -175,9 +173,9 @@ vaccineproduce_data = main()
 
 
 def get_vaccineproduce_values(data):
-    """ 
-    Request data on the calculated vaccine production numbers for the next year,
-    the vaccine production numbers will be displayed
+    """
+    Request data on the calculated vaccine production numbers
+    for the next year, the vaccine production numbers will be displayed
     on the terminal for the user to know.
     """
     headings = SHEET.worksheet("vaccineproduce").get_all_values()[0]
@@ -189,4 +187,3 @@ def get_vaccineproduce_values(data):
 
 vaccineproduce_values = get_vaccineproduce_values(vaccineproduce_data)
 print(vaccineproduce_values)
-
