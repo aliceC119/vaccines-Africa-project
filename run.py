@@ -85,6 +85,10 @@ def calculate_surplus_data(livessaved_row):
     for vaccineproduce, livessaved in zip(vaccineproduce_row, livessaved_row):
         surplus = int(vaccineproduce) - livessaved
         surplus_data.append(surplus)
+    print(f"The calculated surplus numbers of the following \n\
+    vaccines are in this order: \n\
+    Diphtheria, Hepatitis B, Measles, Polio, Rubella,Tetanus,\n\
+    Tuberculosis, Yellow fever")
     print(surplus_data)
 
     return surplus_data
@@ -136,6 +140,10 @@ def calculate_totallivessaved_data(data):
         total = sum(int_column)
         totallivessaved_num = total
         new_totallivessaved_data.append(totallivessaved_num)
+    
+    print(f"The calculated total number of lives saved by the \n\
+    following vaccines is in this order: Diphtheria, Hepatitis B, \n\
+        Measles, Polio, Rubella,Tetanus, Tuberculosis, Yellow fever")
     print(new_totallivessaved_data)
     return new_totallivessaved_data
 
@@ -155,10 +163,14 @@ def main():
     totallivessaved_data = calculate_totallivessaved_data(livessaved_columns)
     update_worksheet(totallivessaved_data, "totallivessaved")
     return vaccineproduce_data
+    
 
 
 print("Welcome to Vaccines Africa Data Automation")
 vaccineproduce_data = main()
+
+
+
 
 
 def get_vaccineproduce_values(data):
@@ -171,3 +183,4 @@ def get_vaccineproduce_values(data):
 
 vaccineproduce_values = get_vaccineproduce_values(vaccineproduce_data)
 print(vaccineproduce_values)
+
