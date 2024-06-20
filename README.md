@@ -114,6 +114,8 @@ a format error of no new line was found when validating the codes from the Githu
 
    <img width="674" alt="Screenshot 2024-06-20 at 13 30 18" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/e901e651-6323-4309-bae8-678ca6f9c351">
 
+## Spreadsheet
+   - A sample spreadsheet showing what the spreadsheet for this project looks like is included in the folder.
 
 ## Deployment
 This project was deployed using Code Institute's mock terminal for Heroku.
