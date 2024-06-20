@@ -1,6 +1,6 @@
 ## Introduction
 
-- Vaccines-Africa project would like to show how many lives are saved by each vaccine (diphtheria , hepatitis B, measles, polio, rubella, tetanus, tuberculosis, yellow fever) in Africa from 2020, it can also calculate the annual surplus of unused vaccines. The calculations aim to estimate the vaccine production amount for next year.
+- Vaccines-Africa project would like to show how many lives are saved by each vaccine (diphtheria , hepatitis B, measles, polio, rubella, tetanus, tuberculosis, yellow fever) in Africa in each year, it can also calculate the annual surplus of unused vaccines. The calculations aim to estimate the vaccine production amount for next year.
 - The total number of lives saved by each vaccine is calculated to give an insight into the number of lives saved by each type of vaccine. The program can calculate the total number of lives saved for the last 5 years. Data in the worksheet starts in the year of 2020.
 - The link directs to the app https://vaccine-africa-project-6752f2263f16.herokuapp.com/
 <img width="1083" alt="Screenshot 2024-06-19 at 00 41 26" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/ea573253-06fa-4a7f-9f81-360ade5215eb">
@@ -14,10 +14,10 @@
 1. Collect lives saved data from user
 2. Check that the lives saved data entered by the user is valid, if not, messages will be displayed according to different issues to request the user to provide the correct format of the data.
 3. Valid lives saved data will be displayed in the terminal after entered by the user.
-4. Add lives saved data to the 'livessaved' worksheet
+4. Add lives saved data to the 'livessaved' worksheet.
 5. Calculate surplus numbers (the number of each vaccine type produced minus the number of lives saved from last year.)
 6. Calculated surplus data will be displayed in the terminal.
-7. Add surplus data to the 'surplus' worksheet
+7. Add surplus data to the 'surplus' worksheet.
 8. Calculate averages of the vaccine production numbers for the last 5 years
 9. The vaccine company would like to save more lives by increasing the vaccine numbers, so a calculation of vaccine production numbers is added (using the averages of vaccine production numbers and adding 20% for next year)
 10. Calculated numbers of the vaccine production for next year will be displayed in the terminal.
@@ -26,6 +26,8 @@
 13. Calculated numbers of the total lives saved will be displayed in the terminal.
 14. Add the total number of lives saved for each vaccine to the 'totallivessaved' worksheet.
 15. Request detailed production data showing the amount of each type of vaccine estimated to be produced for the next year.
+16. A detailed vaccine production data list will be displayed on the terminal.
+17. At the end of the program, a message is displayed thanking the user for using the program, informing the user that the data in the worksheets has been updated, and asking the user to enter new data.
 
 
 ![vaccine_Africe_workflow](https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/0af6bc4d-6469-44a4-a52e-f0b80c4003f3)
