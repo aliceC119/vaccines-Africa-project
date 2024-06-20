@@ -63,10 +63,10 @@ def update_worksheet(data, worksheet):
     calculated numbers of surplus, vaccine production, and the
     total lives saved.
     """
-    print(f"Updating {worksheet} worksheet...\n")
+    
     worksheet_to_update = SHEET.worksheet(worksheet)
     worksheet_to_update.append_row(data)
-    print(f"{worksheet} worksheet updated successfully\n")
+    
 
 
 def calculate_surplus_data(livessaved_row):
