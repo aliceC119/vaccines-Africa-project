@@ -191,5 +191,3 @@ print(vaccineproduce_values)
 print("Thank you for using the program. The above data are updated \n\
     in the worksheets. Please press 'RUN PROGRAM' if you wish to \n\
     enter new data.\n")
-
-    
