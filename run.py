@@ -87,7 +87,7 @@ def calculate_surplus_data(livessaved_row):
     print(f"The calculated surplus numbers for the following \n\
     vaccines are listed in this order: \n\
     Diphtheria, Hepatitis B, Measles, Polio, Rubella,Tetanus,\n\
-    Tuberculosis, Yellow fever")
+    Tuberculosis, Yellow fever.\n")
     print(surplus_data)
 
     return surplus_data
@@ -125,7 +125,7 @@ def calculate_vaccineproduce_data(data):
     print(f"The calculated vaccine production numbers for the following \n\
     vaccines are listed in this order: \n\
     Diphtheria, Hepatitis B, Measles, Polio, Rubella,Tetanus,\n\
-    Tuberculosis, Yellow fever")
+    Tuberculosis, Yellow fever. \n")
     print(new_vaccineproduce_data)
 
     return new_vaccineproduce_data
@@ -146,7 +146,7 @@ def calculate_totallivessaved_data(data):
 
     print(f"The calculated total numbers of lives saved by the \n\
     following vaccines are listed in this order: Diphtheria, Hepatitis B, \n\
-    Measles, Polio, Rubella,Tetanus, Tuberculosis, Yellow fever")
+    Measles, Polio, Rubella,Tetanus, Tuberculosis, Yellow fever.\n")
     print(new_totallivessaved_data)
     return new_totallivessaved_data
 
@@ -187,3 +187,9 @@ def get_vaccineproduce_values(data):
 
 vaccineproduce_values = get_vaccineproduce_values(vaccineproduce_data)
 print(vaccineproduce_values)
+
+print("Thank you for using the program. The above data are updated \n\
+    in the worksheets. Please press 'RUN PROGRAM' if you wish to \n\
+    enter new data.\n")
+
+    
