@@ -188,6 +188,5 @@ def get_vaccineproduce_values(data):
 vaccineproduce_values = get_vaccineproduce_values(vaccineproduce_data)
 print(vaccineproduce_values)
 
-print("Thank you for using the program. The above data are updated \n\
-    in the worksheets. Please press 'RUN PROGRAM' if you wish to \n\
-    enter new data.\n")
+print("Thank you for using the program. The above data are updated in \n\
+the worksheets.Please press 'RUN PROGRAM' if you wish to enter new data.\n")
