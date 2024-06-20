@@ -174,10 +174,12 @@ print("Welcome to Vaccines Africa Data Automation")
 vaccineproduce_data = main()
 
 
-
-
-
 def get_vaccineproduce_values(data):
+    """ 
+    Request data on the calculated vaccine production numbers for the next year,
+    the vaccine production numbers will be displayed
+    on the terminal for the user to know.
+    """
     headings = SHEET.worksheet("vaccineproduce").get_all_values()[0]
 
     print("Produce the following numbers of vaccines for next year: \n")
