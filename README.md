@@ -104,7 +104,16 @@
 
 ## Validtor Testing
 + PEP8
-  - No errors were returned from https://pep8ci.herokuapp.com/
+  - No errors were returned with the codes from the Gitpod Workspace from https://pep8ci.herokuapp.com/
+    
+## Error relates to the validation
+  - No error was found when validating the codes from the Gitpod workspace, however,
+a format error of no new line was found when validating the codes from the Github file.
+
+   <img width="678" alt="Screenshot 2024-06-20 at 13 27 35" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/9524f5dc-371d-4bea-9fbf-70ad2baae51f">
+
+   <img width="674" alt="Screenshot 2024-06-20 at 13 30 18" src="https://github.com/aliceC119/vaccines-Africa-project/assets/162838985/e901e651-6323-4309-bae8-678ca6f9c351">
+
 
 ## Deployment
 This project was deployed using Code Institute's mock terminal for Heroku.
